@@ -1,0 +1,25 @@
+{% extends 'layout.html' %} {% block content %}
+<main id="main">
+  <h2>
+    Unlimited movies, TV shows and more.
+    Ready to join MOFLIX? Log in or register to create or restart your membership.
+  </h2>
+  <br />
+  <h2>
+    Enjoy MOFLIX on your TV.
+    Watch titles on Smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+  </h2>
+  <br />
+  <h1>Search for the movies starring your favorite actor!</h1>
+  <br />
+  <br />
+  <div class="form-wrapper">
+      <form action="{{handler_url}}" method="POST">
+          <div class ="form-field">{{form.actor(placeholder="Enter an actor name...", size=100, style="display: inline; font-size: 150%; color: #000000; text-align: center; ", class="textarea")}} </div>
+          {{ form.submit }}
+      </form>
+  </div>
+
+
+</main>"
+{% endblock %}
